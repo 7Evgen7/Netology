@@ -42,7 +42,7 @@
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_1_5.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_01-Smon/9_01_5.jpg)
 
 </details>
 
