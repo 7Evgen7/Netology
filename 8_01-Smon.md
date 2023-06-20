@@ -120,95 +120,16 @@
 
 ***Задание 2 со звёздочкой***
 
-Что нужно сделать:
-1. Создайте файл .gitignore (обратите внимание на точку в начале файла) и проверьте его статус сразу после создания.
+С помощью Yandex Monitoring сделайте 2 алерта на загрузку процессора: WARN и ALARM. Создайте уведомление по e-mail.
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_2_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_01-Smon/9_02.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_01-Smon/9_02_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_01-Smon/9_02_1_.jpg)
+
 
 </details>
-
-2. Добавьте файл .gitignore в следующий коммит `git add....`
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_2_2.jpg)
-
-</details>
-
-3. Напишите правила в этом файле, чтобы игнорировать любые файлы `.pyc`, а также все файлы в директории `cache`.
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_2_3.jpg)
-
-</details>
-
-4. Сделайте `commit` и `push`.
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_2_4.jpg)
-   
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_2_4_.jpg)
-
-</details>
-
-В качестве ответа добавьте ссылку на этот коммит в ваш md-файл с решением.
-
-<details>
-   
-![Commit and push .gitignore](https://github.com/7Evgen7/Git/commit/85a5d80cd2cdafc56ae0d3f6ce4cd7eee721bcf3)
-   
-</details>
-
----
-
-***Задание 3***
-Что нужно сделать:
-
-1. Создайте новую ветку dev и переключитесь на неё.
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_3_1.jpg)
-
-</details>
-
-2. Создайте файл test.sh с произвольным содержимым.
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_3_2.jpg)
-
-</details>
-
-3. Сделайте несколько commit и push, имитируя активную работу над этим файлом.
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_3_3.jpg)
-
-</details>
-
-4. Сделайте merge этой ветки в основную. Сначала нужно переключиться на неё, а потом вызывать git merge.
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_3_4.jpg)
-
-</details>
-
-5. Сделайте `commit` и `push`.
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_05-Git/7_05_3_5.jpg)
-
-</details>
-
-В качестве ответа прикрепите ссылку на graph commit https://github.com/7Evgen7/Git/network в ваш md-файл с решением.
 
 
 **END**
