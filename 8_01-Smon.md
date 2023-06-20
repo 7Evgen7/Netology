@@ -8,7 +8,7 @@
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_01-Smon/9_01_1_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_01-Smon/9_01_1.jpg)
    
 </details>
 
