@@ -60,7 +60,21 @@
 
 3. Добавьте Zabbix Server в список разрешенных серверов ваших Zabbix Agentов
 4. Добавьте Zabbix Agentов в раздел Configuration > Hosts вашего Zabbix Servera
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_4.jpg)
+
+</details>
+
 5. Проверьте что в разделе Latest Data начали появляться данные с добавленных агентов
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5_2.jpg)
 
 С помощью Yandex Monitoring сделайте 2 алерта на загрузку процессора: WARN и ALARM. Создайте уведомление по e-mail.
 
