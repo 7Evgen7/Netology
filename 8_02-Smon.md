@@ -76,16 +76,27 @@
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5_1.jpg)
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5_2.jpg)
 
-С помощью Yandex Monitoring сделайте 2 алерта на загрузку процессора: WARN и ALARM. Создайте уведомление по e-mail.
+</details>
+
+---
+
+***Задание 3 со звёздочкой***
+
+Установите Zabbix Agent на Windows (компьютер) и подключите его к серверу Zabbix.
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_01-Smon/9_02.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_01-Smon/9_02_1.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_01-Smon/9_02_1_.jpg)
-
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_03.jpg)
 
 </details>
 
+Требования к результаты
+Приложите в файл README.md скриншот раздела Latest Data, где видно свободное место на диске C:
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_03_1.jpg)
+
+</details>
 
 **END**
