@@ -22,84 +22,65 @@
 
 </details>
 
-3. Пользуясь конфигуратором комманд с официального сайта, составьте набор команд для установки последней версии Zabbix с поддержкой PostgreSQL и Apache
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_3.jpg)
-
-</details>
-
-4. Выполните все необходимые команды для установки Zabbix Server и Zabbix Web Server
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_4.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_4_.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_4__.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_4__1.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_4__1_.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_4__1__.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_4__1___.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_4_rezault.jpg)
-
-</details>
-
 ---
 
 ***Задание 2***
 
-Установите Zabbix Agent на два хоста.
+Добавьте в Zabbix два хоста и задайте им имена <фамилия и инициалы-1> и <фамилия и инициалы-2>. Например: ivanovii-1 и ivanovii-2.
 
 Процесс выполнения
-
 1. Выполняя ДЗ сверяйтесь с процессом отражённым в записи лекции.
 2. Установите Zabbix Agent на 2 виртмашины, одной из них может быть ваш Zabbix Server
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_2.jpg)
-
-</details>
-
 3. Добавьте Zabbix Server в список разрешенных серверов ваших Zabbix Agentов
 4. Добавьте Zabbix Agentов в раздел Configuration > Hosts вашего Zabbix Servera
+5. Прикрепите за каждым хостом шаблон Linux by Zabbix Agent
+6. Проверьте что в разделе Latest Data начали появляться данные с добавленных агентов
+
+Требования к результату
+ Результат данного задания сдавайте вместе с заданием 3
+
+---
+
+***Задание 3***
+
+Привяжите созданный шаблон к двум хостам. Также привяжите к обоим хостам шаблон Linux by Zabbix Agent.
+
+Процесс выполнения
+1. Выполняя ДЗ сверяйтесь с процессом отражённым в записи лекции.
+2. Зайдите в настройки каждого хоста и в разделе Templates прикрепите к этому хосту ваш шаблон
+3. Так же к каждому хосту привяжите шаблон Linux by Zabbix Agent
+4. Проверьте что в раздел Latest Data начали поступать необходимые данные из вашего шаблона
+
+Требования к результату
+ Прикрепите в файл README.md скриншот страницы хостов, где будут видны привязки шаблонов с названиями «Задание 2-3». 
+ Хосты должны иметь зелёный статус подключения
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_4.jpg)
-
-</details>
-
-5. Проверьте что в разделе Latest Data начали появляться данные с добавленных агентов
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5_.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5_1.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_2_5_2.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_03-Smon/9_03_2_5.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_03-Smon/9_03_2_6.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_03-Smon/9_03_3.jpg)
 
 </details>
 
 ---
 
-***Задание 3 со звёздочкой***
+***Задание 4***
 
-Установите Zabbix Agent на Windows (компьютер) и подключите его к серверу Zabbix.
+Создайте свой кастомный дашборд.
+
+Процесс выполнения
+1. Выполняя ДЗ сверяйтесь с процессом отражённым в записи лекции.
+2. В разделе Dashboards создайте новый дашборд
+3. Разместите на нём несколько графиков на ваше усмотрение.
+
+Требования к результату
+ Прикрепите в файл README.md скриншот дашборда с названием «Задание 4»
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_03.jpg)
-
-</details>
-
-Требования к результаты
-Приложите в файл README.md скриншот раздела Latest Data, где видно свободное место на диске C:
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_03_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_03-Smon/9_04.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_03-Smon/9_04_.jpg)
 
 </details>
 
