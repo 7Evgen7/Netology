@@ -17,7 +17,8 @@
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_02-Smon/9_02_1_2.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_03-Smon/9_03_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_03-Smon/9_03_1_.jpg)
 
 </details>
 
