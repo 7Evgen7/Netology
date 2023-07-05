@@ -9,17 +9,46 @@
 Процесс выполнения
 1. Выполняя задание, сверяйтесь с процессом, отражённым в записи лекции
 2. Создайте пользователя prometheus
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_2.jpg)
+
+</details>
+
 3. Скачайте prometheus и в соответствии с лекцией разместите файлы в целевые директории
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_3.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_3_.jpg)
+
+</details>
+
 4. Создайте сервис как показано на уроке
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_4.jpg)
+
+</details>
+
 5. Проверьте что prometheus запускается, останавливается, перезапускается и отображает статус с помощью systemctl
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_5.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_5_.jpg)
+
+</details>
 
 Требования к результату
 * Прикрепите к файлу README.md скриншот systemctl status prometheus, где будет написано: prometheus.service — Prometheus Service Netology Lesson 9.4 — [Ваши ФИО]
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_03-Smon/9_03_1.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_03-Smon/9_03_1_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_5__.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_5___.jpg)
 
 </details>
 
