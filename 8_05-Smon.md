@@ -17,16 +17,14 @@
 
 ***Задание 2***
 
-Установите Node Exporter.
+Установите Alertmanager и интегрируйте его с Prometheus.
 
-Процесс выполнения
-1. Выполняя ДЗ сверяйтесь с процессом отражённым в записи лекции.
-2. Скачайте node exporter приведённый в презентации и в соответствии с лекцией разместите файлы в целевые директории
+Требования к результату
+* Прикрепите скриншот Alerts из Prometheus, где правило оповещения будет в статусе Fireing, и скриншот из Alertmanager, где будет видно действующее правило оповещения
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_2_2.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_2_2_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_05-Smon/9_05_2.jpg)
 
 </details>
 
