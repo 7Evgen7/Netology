@@ -7,11 +7,9 @@
 Требования к результату
 * Погасите node exporter, стоящий на мониторинге, и прикрепите скриншот раздела оповещений Prometheus, где оповещение будет в статусе Pending
 
-
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_5__.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_04-Smon/9_04_1_5___.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_05-Smon/9_05_1.jpg)
 
 </details>
 
