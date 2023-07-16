@@ -5,14 +5,6 @@
 * Дана схема для Cisco Packet Tracer, рассматриваемая в лекции.
 * На данной схеме уже настроено отслеживание интерфейсов маршрутизаторов Gi0/1 (для нулевой группы)
 * Необходимо аналогично настроить отслеживание состояния интерфейсов Gi0/0 (для первой группы).
-
-<details>
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_1_1_.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_1_1__.jpg)
-
-</details>
-
 * Для проверки корректности настройки, разорвите один из кабелей между одним из маршрутизаторов и Switch0 и запустите ping между PC0 и Server0.
 
 <details>
@@ -27,6 +19,9 @@
 <details>
 
 ![Схема в формате pkt](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/hsrp_advanced.pkt)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_1_1_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_1_1__.jpg)
 
 </details>
 
