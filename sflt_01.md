@@ -30,6 +30,14 @@
 ***Задание 2***
 
 * Запустите две виртуальные машины Linux, установите и настройте сервис Keepalived как в лекции, используя пример конфигурационного файла.
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_2_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_2_1_.jpg)
+
+</details>
+
 * Настройте любой веб-сервер (например, nginx или simple python server) на двух виртуальных машинах
 * Напишите Bash-скрипт, который будет проверять доступность порта данного веб-сервера и существование файла index.html в root-директории данного веб-сервера.
 
@@ -83,4 +91,9 @@ vrrp_instance VI_1 {
 
 * На проверку отправьте получившейся bash-скрипт и конфигурационный файл keepalived, а также скриншот с демонстрацией переезда плавающего ip на другой сервер в случае недоступности порта или файла index.html
 
+<details>
 
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_2_5.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_2_6.jpg)
+
+</details>
