@@ -34,7 +34,6 @@
 <details>
 
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_2_1.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_2_1_.jpg)
 
 </details>
 
