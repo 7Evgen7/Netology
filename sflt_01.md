@@ -10,11 +10,17 @@
 
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_1_1_.jpg)
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_1_1__.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_1_1.jpg)
 
 </details>
 
 * Для проверки корректности настройки, разорвите один из кабелей между одним из маршрутизаторов и Switch0 и запустите ping между PC0 и Server0.
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_1_1.jpg)
+
+</details>
+
 * На проверку отправьте получившуюся схему в формате pkt и скриншот, где виден процесс настройки маршрутизатора.
 
 
