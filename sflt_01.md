@@ -26,7 +26,7 @@
 
 <details>
 
-![Схема в формате pkt](https://github.com/7Evgen7/Git/commit/aeb92d3e176003ec37acc92db71b5e00a3adce89)
+![Схема в формате pkt](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/hsrp_advanced.pkt)
 
 </details>
 
