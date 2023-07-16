@@ -16,3 +16,13 @@
 ---
 
 ***Задание 2***
+
+```
+#!/bin/bash
+
+if [[ $(netstat -tulpn | grep LISTEN | grep :80) ]] && [[ -f /var/www/html/inde$
+exit 0
+else
+exit 1
+fi
+```
