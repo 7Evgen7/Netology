@@ -26,7 +26,7 @@
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/8_05-Smon/9_05_1.jpg)
+![Схема в формате pkt](https://github.com/7Evgen7/Git/commit/aeb92d3e176003ec37acc92db71b5e00a3adce89)
 
 </details>
 
