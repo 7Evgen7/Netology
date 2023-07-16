@@ -17,6 +17,8 @@
 
 ***Задание 2***
 
+
+Bash-скрипт, который будет проверять доступность порта данного веб-сервера и существование файла index.html
 ```
 #!/bin/bash
 
@@ -27,6 +29,7 @@ exit 1
 fi
 ```
 
+keepalived.conf
 ```
 global_defs {
     script_user root
