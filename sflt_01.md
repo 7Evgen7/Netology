@@ -96,3 +96,5 @@ vrrp_instance VI_1 {
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_2_6.jpg)
 
 </details>
+
+**КОНЕЦ**
