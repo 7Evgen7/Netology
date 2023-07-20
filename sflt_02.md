@@ -3,13 +3,22 @@
 ***Задание 1***
 
 * Запустите два simple python сервера на своей виртуальной машине на разных портах
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_02/10_2_1.jpg)
+
+</details>
+
 * Установите и настройте HAProxy, воспользуйтесь материалами к лекции по ссылке
 * Настройте балансировку Round-robin на 4 уровне.
 * На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_01/10_1_1_1.jpg)
+![конфигурационный файл haproxy](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_02/haproxy.cfg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_02/10_2_1_.jpg)
 
 </details>
 
