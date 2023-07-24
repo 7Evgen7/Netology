@@ -10,7 +10,7 @@
 <details>
 
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_1.jpg)
-**
+
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_1.jpg)
 
 </details>
@@ -28,9 +28,9 @@
 <details>
 
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_2_1.jpg)
-**
+
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_2_2.jpg)
-**
+
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_2_3.jpg)
 
 </details>
