@@ -9,18 +9,11 @@
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_02/10_2_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_1.jpg)
+**
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_1.jpg)
 
 </details>
-
-<details>
-
-![конфигурационный файл haproxy](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_02/haproxy.cfg)
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_02/10_2_1_.jpg)
-
-</details>
-
 
 ---
 
@@ -34,7 +27,11 @@
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_02/10_2_2_4_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_2_1.jpg)
+**
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_2_2.jpg)
+**
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_2_3.jpg)
 
 </details>
 
