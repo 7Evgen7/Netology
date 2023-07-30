@@ -88,22 +88,45 @@ output "external_ip_address_vm_1" {
 }
 ```
 
-
-
-
-2. Установите на машину с jenkins golang.
-
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_06-DevOps/8_02_1_2.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_2.jpg)
    
 </details>
 
-3. Используя свой аккаунт на GitHub, сделайте себе форк репозитория. В этом же репозитории находится дополнительный материал для выполнения ДЗ.
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_3.jpg)
+   
+</details>
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_06-DevOps/8_02_1_3.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_4.jpg)
+   
+</details>
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_5.jpg)
+   
+</details>
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_5_.jpg)
+   
+</details>
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_6.jpg)
+   
+</details>
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_7.jpg)
    
 </details>
 
