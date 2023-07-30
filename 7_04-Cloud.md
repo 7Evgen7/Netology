@@ -18,7 +18,7 @@
    
 </details>
 
-Файл terraform main.tf
+`Файл terraform main.tf.`
 ```
 terraform {
   required_providers {
@@ -88,13 +88,15 @@ output "external_ip_address_vm_1" {
 }
 ```
 
+`Содержимое файла terraform meta.txt.`
+
 <details>
    
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_2.jpg)
    
 </details>
 
-Установка vm
+`Установка vm.`
 
 <details>
    
@@ -109,6 +111,8 @@ output "external_ip_address_vm_1" {
    
 </details>
 
+`Версия установленного ansible.`
+
 <details>
    
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_4.jpg)
@@ -121,7 +125,7 @@ output "external_ip_address_vm_1" {
    
 </details>
 
-Содержимое файла ansible main.yml
+`Содержимое файла ansible main.yml.`
 
 <details>
    
@@ -129,7 +133,7 @@ output "external_ip_address_vm_1" {
    
 </details>
 
-Установка и проверка nginx.
+`Установка и проверка nginx.`
 
 <details>
    
