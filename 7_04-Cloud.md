@@ -112,6 +112,7 @@ output "external_ip_address_vm_1" {
    
 </details>
 
+Содержимое файла ansible main.yml
 
 <details>
    
