@@ -94,6 +94,15 @@ output "external_ip_address_vm_1" {
    
 </details>
 
+Установка vm
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_2_.jpg)
+   
+</details>
+
+
 <details>
    
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_3.jpg)
