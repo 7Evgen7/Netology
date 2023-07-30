@@ -112,6 +112,8 @@ output "external_ip_address_vm_1" {
    
 </details>
 
+Установка и проверка nginx.
+
 <details>
    
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_5_.jpg)
