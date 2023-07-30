@@ -13,7 +13,7 @@
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_06-DevOps/8_02_1_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/7_04-Cloud/7_04_1.jpg)
 
    
 </details>
