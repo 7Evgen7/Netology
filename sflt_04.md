@@ -34,9 +34,9 @@ terraform {
 }
 
 provider "yandex" {
-  token     = "y0_AgAAAAAmc0a9AATuwQAAAADkpxvbaXozm5MMQPuiNW4i1J3LSzEs5Z8"
-  cloud_id  = "b1gbmmfunajo8hmsv1ak"
-  folder_id = "b1g2oala3k7fbcaisetm"
+  token     = "y0_AgAAAAAmc0a...........................J3LSzEs5Z8"
+  cloud_id  = "b1gbmmf........sv1ak"
+  folder_id = "b1g2oal........isetm"
   zone      = "ru-central1-a"
 }
 resource "yandex_compute_instance" "vm" {
