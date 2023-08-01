@@ -153,16 +153,6 @@ output "external_ip_address_vm1" {
 
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_1.jpg)
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_1.jpg)
-
-</details>
-
-4. Сделайте запрос на 80 порт на внешний IP-адрес балансировщика и убедитесь, что вы получаете ответ в виде дефолтной страницы Nginx.
-
-<details>
-
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_04/10_4___.jpg)
 
 </details>
