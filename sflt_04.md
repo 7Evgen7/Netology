@@ -21,7 +21,7 @@
 
 В качестве результата пришлите:
 
-1. Terraform Playbook.
+1. `Terraform Playbook`.
 
 ```
 terraform {
@@ -128,14 +128,26 @@ output "external_ip_address_vm1" {
 <details>
 
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_04/10_4_.jpg)
+
+</details>
+
+`Установка nginx.`
+
+<details>
+
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_04/10_4__.jpg)
 
 </details>
 
 
-2. Скриншот статуса балансировщика и целевой группы.
+2. `Скриншот статуса балансировщика и целевой группы`.
 
+<details>
 
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_04/10_4__1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_04/10_4___1.jpg)
+
+</details>
 
 3. Скриншот страницы, которая открылась при запросе IP-адреса балансировщика.
 
@@ -147,37 +159,13 @@ output "external_ip_address_vm1" {
 
 </details>
 
----
+4. Сделайте запрос на 80 порт на внешний IP-адрес балансировщика и убедитесь, что вы получаете ответ в виде дефолтной страницы Nginx.
 
-***Задание 2***
-
-Теперь вместо создания виртуальных машин создайте группу виртуальных машин с балансировщиком нагрузки.
-
-Nginx нужно будет поставить тоже автоматизированно. Для этого вам нужно будет подложить файл установки Nginx в user-data-ключ метадаты виртуальной машины.
-
-Пример файла установки Nginx.
-Как подставлять файл в метадату виртуальной машины.
-Перейдите в веб-консоль Yandex Cloud и убедитесь, что:
-созданный балансировщик находится в статусе Active,
-обе виртуальные машины в целевой группе находятся в состоянии healthy.
-Сделайте запрос на 80 порт на внешний IP-адрес балансировщика и убедитесь, что вы получаете ответ в виде дефолтной страницы Nginx.
-В качестве результата пришлите
-
-1. Terraform Playbook.
-
-2. Скриншот статуса балансировщика и целевой группы.
-
-3. Скриншот страницы, которая открылась при запросе IP-адреса балансировщика.
 <details>
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_2_1.jpg)
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_2_2.jpg)
-
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_03/10_3_2_3.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_04/10_4___.jpg)
 
 </details>
-
 
 
 ***КОНЕЦ***
