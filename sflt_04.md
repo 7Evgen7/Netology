@@ -125,7 +125,17 @@ output "external_ip_address_vm1" {
   value = yandex_compute_instance.vm[1].network_interface.0.nat_ip_address
 ```
 
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_04/10_4_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/SFLT_04/10_4__.jpg)
+
+</details>
+
+
 2. Скриншот статуса балансировщика и целевой группы.
+
+
 
 3. Скриншот страницы, которая открылась при запросе IP-адреса балансировщика.
 
