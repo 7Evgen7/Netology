@@ -24,6 +24,14 @@
 
 Приведите скриншот systemctl status memcached, где будет видно, что memcached запущен.
 
+`Решение`
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_2_.jpg)
+   
+</details>
+
 ---
 
 ***Задание 3. Удаление по TTL в Memcached***
@@ -32,6 +40,14 @@
 
 Приведите скриншот, на котором видно, что спустя 5 секунд ключи удалились из базы.
 
+`Решение`
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_3.jpg)
+   
+</details>
+
 ---
 
 ***Задание 4. Запись данных в Redis***
@@ -39,6 +55,18 @@
 Запишите в Redis несколько ключей с любыми именами и значениями.
 
 Через redis-cli достаньте все записанные ключи и значения из базы, приведите скриншот этой операции.
+
+`Решение`
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_4.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_4_.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_4__.jpg)
+   
+</details>
 
 ---
 
