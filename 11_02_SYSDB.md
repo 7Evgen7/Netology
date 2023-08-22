@@ -79,4 +79,13 @@
 
 Приведите скриншот, где будут проделаны все операции и будет видно, что значение key5 стало равно 10.
 
+
+`Решение`
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_5.jpg)
+   
+</details>
+
 ***КОНЕЦ***
