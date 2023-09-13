@@ -113,7 +113,6 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
    
 </details>
 
-
 '''
 mysql -uroot -p123
 CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY '456';
