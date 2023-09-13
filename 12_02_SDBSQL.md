@@ -124,12 +124,11 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 customer         | customer_id
 
 
-
 `Решение`
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_02_2_2.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_02_2.jpg)
    
 </details>
 
@@ -139,8 +138,8 @@ customer         | customer_id
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_02_2_2_.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_02_2_2__.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_02_2_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_02_2__.jpg)
    
 </details>
 
