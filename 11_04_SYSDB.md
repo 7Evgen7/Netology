@@ -63,3 +63,5 @@ $ rabbitmqadmin get queue='hello'
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_2_.jpg)
    
 </details>
+
+***КОНЕЦ***
