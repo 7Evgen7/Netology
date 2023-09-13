@@ -124,6 +124,7 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 customer         | customer_id
 
 
+
 `Решение`
 
 <details>
@@ -131,6 +132,7 @@ customer         | customer_id
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_02_2_2.jpg)
    
 </details>
+
 
 А если проконсультироваться у умного товарища, то можно сотворить следующее:
 
