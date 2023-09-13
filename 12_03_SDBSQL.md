@@ -74,7 +74,7 @@
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_03_SDBSQL/12_04.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_03_SDBSQL/12_03_4.jpg)
    
 </details>
 
