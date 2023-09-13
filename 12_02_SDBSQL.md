@@ -63,6 +63,9 @@
 
 
 1.6. Переподключитесь к базе данных от имени sys_temp.
+Для смены типа аутентификации с sha2 используйте запрос:
+
+ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 
 
 `Решение`
@@ -74,9 +77,6 @@
 </details>
 
 
-Для смены типа аутентификации с sha2 используйте запрос:
-
-ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 1.6_. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
 
 
