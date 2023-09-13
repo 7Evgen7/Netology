@@ -113,7 +113,8 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
    
 </details>
 
-'
+
+`
 mysql -uroot -p123
 CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY '456';
 SELECT User,Host FROM mysql.user;
@@ -127,7 +128,8 @@ mysql -u sys_temp -p ${sakila} < /home/kamaev/db/sakila-db/sakila-schema.sql
 mysql -u sys_temp -p ${sakila} < /home/kamaev/db/sakila-db/sakila-data.sql
 USE sakila;
 SHOW TABLES;
-'
+`
+
 ---
 
 ***Задание 2***
