@@ -16,6 +16,7 @@
 
 Получите уникальные названия районов из таблицы с адресами, которые начинаются на “K” и заканчиваются на “a” и не содержат пробелов.
 
+
 `Решение`
 
 <details>
@@ -23,6 +24,7 @@
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_03_1.jpg)
    
 </details>
+
 
 ---
 
@@ -39,11 +41,13 @@
    
 </details>
 
+
 ---
 
 ***Задание 3***
 
 Получите последние пять аренд фильмов.
+
 
 `Решение`
 
@@ -52,6 +56,7 @@
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_03_3.jpg)
    
 </details>
+
 
 ---
 
@@ -72,5 +77,6 @@
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_04.jpg)
    
 </details>
+
 
 ***КОНЕЦ***
