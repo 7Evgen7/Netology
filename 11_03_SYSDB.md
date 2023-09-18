@@ -11,6 +11,10 @@
 <details>
    
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_03_SYSDB/11_03.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_03_SYSDB/11_03_.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_03_SYSDB/11_03_1.jpg)
    
 </details>
 
