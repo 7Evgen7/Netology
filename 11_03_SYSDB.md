@@ -31,7 +31,8 @@
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_2_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_03_SYSDB/11_03_2.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_03_SYSDB/11_03_2_.jpg)
    
 </details>
 
