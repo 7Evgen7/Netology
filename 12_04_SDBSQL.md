@@ -23,7 +23,7 @@
 
 <details>
 
-
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_04_SDBSQL/12_04_2.jpg)
   
 </details>
 
@@ -34,6 +34,6 @@
 
 <details>
 
-
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_04_SDBSQL/12_04_3.jpg)
   
 </details>
