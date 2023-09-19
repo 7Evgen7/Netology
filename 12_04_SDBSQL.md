@@ -41,9 +41,9 @@ HAVING Количество > 300;
 </details>
 
 ```
-SELECT  count(`length`) 
+SELECT  count (`length`) 
 FROM film 
-WHERE `length` > (SELECT avg(`length`) FROM film);
+WHERE `length` > (SELECT avg (`length`) FROM film);
 ```
 
 ---
