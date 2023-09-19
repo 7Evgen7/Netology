@@ -16,7 +16,7 @@
 </details>
 
 ```
-SELECT concat (s.first_name  , ' ', s.last_name) as Имя , c.city,  count (c2.customer_id) as Количество 
+SELECT concat (s.first_name  , ' ', s.last_name) as Имя , c.city, count (c2.customer_id) as Количество 
 FROM staff s 
 JOIN address a  ON s.address_id = a.address_id 
 JOIN city c  ON a.city_id = c.city_id 
