@@ -8,9 +8,11 @@
 
 <details>
 
-![Screnshot](
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_05_SDBSQL/12_05_1.jpg)
   
 </details>
+
+---
 
 ***Задание 2***
 
@@ -24,3 +26,13 @@ where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and
 
 перечислите узкие места;
 оптимизируйте запрос: внесите корректировки по использованию операторов, при необходимости добавьте индексы.
+
+`Решение`
+
+<details>
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_05_SDBSQL/12_05_2.jpg)
+  
+</details>
+
+***КОНЕЦ***
