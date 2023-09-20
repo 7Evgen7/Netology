@@ -13,10 +13,11 @@
 </details>
 
 ```
-SELECT  SUM(tt.DATA_LENGTH) , SUM(tt.INDEX_LENGTH), CONCAT(ROUND((SUM(tt.INDEX_LENGTH) / SUM(tt.DATA_LENGTH)) *100), ' %') AS Отношение
-FROM INFORMATION_SCHEMA.TABLES tt
-WHERE  tt.TABLE_SCHEMA = 'sakila' ;
-
+SELECT table_schema AS 'DataBase' , 
+CONCAT(ROUND((SUM(index_length) * 100 / SUM(data_length)), 2), ' ', '%' ) AS 'index/size'
+FROM INFORMATION_SCHEMA.TABLES 
+WHERE TABLE_SCHEMA = 'sakila';
+```
 ---
 
 ***Задание 2***
