@@ -46,7 +46,7 @@ where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and
 *  при выполнении функции попадает f.title , что явялется избыточным, так как таблица film не используется.
 
 ```
-SELECT  CONCAT(c.last_name, ' ', c.first_name) AS name, sum(p.amount)
+SELECT CONCAT(c.last_name, ' ', c.first_name) AS name, SUM(p.amount)
 FROM payment p, rental r, customer c, inventory i
 WHERE date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and r.customer_id = c.customer_id and i.inventory_id = r.inventory_id
 GROUP BY c.customer_id;
