@@ -6,9 +6,14 @@
 
 Итогом выполнения домашнего задания будет приложенный скриншот веб-интерфейса RabbitMQ.
 
+`Решение`
+
 <details>
 
-!
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_04_SYSDB/11_04_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_04_SYSDB/11_04_1_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_04_SYSDB/11_04_1__.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_04_SYSDB/11_04_1___.jpg)
    
 </details>
 
