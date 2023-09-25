@@ -23,10 +23,42 @@
 
 Используя приложенные скрипты, проведите тестовую отправку и получение сообщения. Для отправки сообщений необходимо запустить скрипт producer.py.
 
+```
+#!/usr/bin/env python
+# coding=utf-8
+import pika
+
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+channel = connection.channel()
+channel.queue_declare(queue='hello')
+channel.basic_publish(exchange='', routing_key='hello', body='Hello Netology!')
+connection.close()
+```
+
 Для работы скриптов вам необходимо установить Python версии 3 и библиотеку Pika. Также в скриптах нужно указать IP-адрес машины, на которой запущен RabbitMQ, заменив localhost на нужный IP.
 
 $ pip install pika
-Зайдите в веб-интерфейс, найдите очередь под названием hello и сделайте скриншот. После чего запустите второй скрипт consumer.py и сделайте скриншот результата выполнения скрипта
+Зайдите в веб-интерфейс, найдите очередь под названием hello и сделайте скриншот. После чего запустите второй скрипт consumer.py 
+
+```
+#!/usr/bin/env python
+# coding=utf-8
+import pika
+
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+channel = connection.channel()
+channel.queue_declare(queue='hello')
+
+
+def callback(ch, method, properties, body):
+    print(" [x] Received %r" % body)
+
+
+channel.basic_consume(callback, queue='hello', no_ack=True)
+channel.start_consuming()
+```
+
+и сделайте скриншот результата выполнения скрипта
 
 В качестве решения домашнего задания приложите оба скриншота, сделанных на этапе выполнения.
 
