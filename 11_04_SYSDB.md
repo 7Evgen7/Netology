@@ -105,7 +105,11 @@ $ rabbitmqadmin get queue='hello'
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_2_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_04_SYSDB/11_04_3.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_04_SYSDB/11_04_3_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_04_SYSDB/11_04_3_2.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_04_SYSDB/11_04_3_3.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_04_SYSDB/11_04_3_3_.jpg)
    
 </details>
 
