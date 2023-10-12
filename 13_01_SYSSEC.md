@@ -25,7 +25,9 @@
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/12_02_SDBSQL/12_02_1_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_01_SYSSEC/13_1_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_01_SYSSEC/13_1_1_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_01_SYSSEC/13_1_1__.jpg)
    
 </details>
 
