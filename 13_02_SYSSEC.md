@@ -12,9 +12,10 @@
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_01_SYSSEC/13_1_1.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_01_SYSSEC/13_1_1_.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_01_SYSSEC/13_1_1__.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_02_SYSSEC/13_2_1.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_02_SYSSEC/13_2_1_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_02_SYSSEC/13_2_1__.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_02_SYSSEC/13_2_1___.jpg)
    
 </details>
 
