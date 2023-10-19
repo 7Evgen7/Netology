@@ -75,4 +75,4 @@ hydra -L users.txt -P pass.txt < ip-адрес > ssh
 </details>
 
 
-**КОНЕЦ**
+***КОНЕЦ***
