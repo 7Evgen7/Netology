@@ -45,17 +45,34 @@ sudo nmap -sV < ip-адрес >
 
 ***Задание 2***
 
-* Установите поддержку LUKS.
-* Создайте небольшой раздел, например, 100 Мб.
-* Зашифруйте созданный раздел с помощью LUKS.
-В качестве ответа пришлите снимки экрана с поэтапным выполнением задания.
+Проведите атаку на подбор пароля для службы SSH:
+
+hydra -L users.txt -P pass.txt < ip-адрес > ssh
+
+1. Настройка hydra:
+* создайте два файла: users.txt и pass.txt;
+* в каждой строчке первого файла должны быть имена пользователей, второго — пароли. В нашем случае это 
+могут быть случайные строки, но ради эксперимента можете добавить имя и пароль существующего пользователя.
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_03_SYSSEC/13_3_2_1.jpg)
+   
+</details>
+
+2. Включение защиты SSH для Fail2Ban:
+* открыть файл /etc/fail2ban/jail.conf,
+* найти секцию ssh,
+* установить enabled в true.
 
 `Решение`
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_02_SYSSEC/13_2_2.jpg)
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_02_SYSSEC/13_2_2_.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/13_03_SYSSEC/13_3_2_2.jpg)
 
    
 </details>
+
+
+**КОНЕЦ**
