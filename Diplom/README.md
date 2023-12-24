@@ -199,3 +199,4 @@ resource "yandex_compute_instance" "nginx1" {
   }
 ]
 ```
+Вторая ВМ прописывается аналогично, только в другой `zone`.
