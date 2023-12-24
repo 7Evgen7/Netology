@@ -165,3 +165,37 @@ resource "yandex_compute_instance" "bastion" {
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/lemp.jpg)
    
 </details>
+
+```
+data "yandex_compute_image" "lemp" {
+  family = "lemp"
+}
+resource "yandex_compute_instance" "nginx1" {
+  name        = "vm-webserver1"
+  hostname    = "webserver1"
+  platform_id = "standard-v3"
+  zone        = "ru-central1-a"
+  resources {
+    cores         = 2
+    memory        = 2
+    core_fraction = 20
+  }
+  boot_disk {
+    initialize_params {
+      image_id = data.yandex_compute_image.lemp.id
+      size     = 10
+    }
+  }
+  network_interface {
+    subnet_id = yandex_vpc_subnet.subnet-nginx1.id
+    security_group_ids = [yandex_vpc_security_group.in-sg.id, yandex_vpc_securi$
+        ip_address = "10.1.11.10"
+  }
+  metadata = {
+    user-data = "${file("./meta.txt")}"
+ }
+  scheduling_policy {
+    preemptible = true
+  }
+]
+```
