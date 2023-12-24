@@ -112,3 +112,15 @@ provider "yandex" {
   folder_id = "`s`ff`e`hff`c`hf`k`gh`r`hhfg`e`hghg`t`"
 }
 ```
+* в `meta.txt` прописываем:
+```
+#cloud-config
+
+users:
+  - name: kamaev
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa `s`ff`e`hff`c`hf`k`gh`r`hhfg`e`hghg`t` kamaev@bastion
+```
