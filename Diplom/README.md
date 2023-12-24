@@ -307,7 +307,7 @@ resource "yandex_compute_instance" "zabbix" {
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/vm.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/vm_.jpg)
    
 </details>
 
