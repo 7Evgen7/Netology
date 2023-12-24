@@ -107,8 +107,8 @@ terraform {
 }
 
 provider "yandex" {
-  token     = "y0_AgAAAAAmc0a9AATuwQAAAADkpxvbaXozm5MMQPuiNW4i1J3LSzEs5Z8"
-  cloud_id  = "b1gbmmfunajo8hmsv1ak"
-  folder_id = "`s`fhhf`e`hfhff`c`hfhf`k`hhgh`r`hhffhfg`e`hghg`t`"
+  token     = "`s`ff`e`hff`c`hf`k`gh`r`hhfg`e`hghg`t`"
+  cloud_id  = "`s`ff`e`hff`c`hf`k`gh`r`hhfg`e`hghg`t`"
+  folder_id = "`s`ff`e`hff`c`hf`k`gh`r`hhfg`e`hghg`t`"
 }
 ```
