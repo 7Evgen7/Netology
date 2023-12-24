@@ -291,6 +291,17 @@ resource "yandex_compute_instance" "zabbix" {
   }
 
 ```
+* готовимся к запуску Terraform
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/terraform_init.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/terraform_plan.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/terraform_apply.jpg)
+   
+</details>
 
 * тестируем сайт `curl -v <публичный IP балансера>:80`
 <details>
