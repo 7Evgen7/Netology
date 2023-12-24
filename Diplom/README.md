@@ -303,6 +303,14 @@ resource "yandex_compute_instance" "zabbix" {
    
 </details>
 
+* вот поднятые ВМ
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/vm.jpg)
+   
+</details>
+
 * тестируем сайт `curl -v <публичный IP балансера>:80`
 <details>
    
