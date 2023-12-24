@@ -93,3 +93,22 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/ter_ans_version.jpg)
    
 </details>
+
+Для поднятия ВМ с помощью Terraform в Yandex Cloud делаем необходимые настройки:
+* в `provider.tf` прописываем:
+```
+terraform {
+  required_providers {
+    yandex = {
+      source = "yandex-cloud/yandex"
+    }
+  }
+  required_version = ">= 0.95"
+}
+
+provider "yandex" {
+  token     = "y0_AgAAAAAmc0a9AATuwQAAAADkpxvbaXozm5MMQPuiNW4i1J3LSzEs5Z8"
+  cloud_id  = "b1gbmmfunajo8hmsv1ak"
+  folder_id = "`s`fhhf`e`hfhff`c`hfhf`k`hhgh`r`hhffhfg`e`hghg`t`"
+}
+```
