@@ -158,3 +158,10 @@ resource "yandex_compute_instance" "bastion" {
   }
 }
 ```
+* для создания 2-х одинаковых ВМ в разных зонах использую стек LEMP (уже есть nginx и mySQL).
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/lemp.jpg)
+   
+</details>
