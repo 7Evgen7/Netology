@@ -82,3 +82,9 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 Использую ВМ с установленной Ubuntu 18.04.
 Установленны Terrafom и Ansible следующих версий:
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_3.jpg)
+   
+</details>
