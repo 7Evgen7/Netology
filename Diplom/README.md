@@ -291,3 +291,10 @@ resource "yandex_compute_instance" "zabbix" {
   }
 
 ```
+
+* тестируем сайт `curl -v <публичный IP балансера>:80`
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_.jpg)
+   
+</details>
