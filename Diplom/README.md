@@ -299,7 +299,7 @@ resource "yandex_compute_instance" "zabbix" {
 
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/terraform_plan.jpg)
 
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/terraform_apply.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/terraform_apply_.jpg)
    
 </details>
 
