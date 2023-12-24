@@ -84,9 +84,9 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 К дипломной работе установлены:
 
-* ВМ с версией linux Ubuntu 18.04. Это уже сделано
+* :ВМ с версией linux Ubuntu 18.04: Это уже сделано
 
-* установлены Terrafom и Ansible следующих версий: Это уже сделано
+* :установлены Terrafom и Ansible следующих версий: Это уже сделано
 
 <details>
    
@@ -95,7 +95,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 </details>
 
 Для поднятия ВМ с помощью Terraform в Yandex Cloud делаем необходимые настройки:
-* в `provider.tf` прописываем: Это уже сделано
+* :в `provider.tf` прописываем: Это уже сделано
 ```
 terraform {
   required_providers {
@@ -112,7 +112,7 @@ provider "yandex" {
   folder_id = "`s`ff`e`hff`c`hf`k`gh`r`hhfg`e`hghg`t`"
 }
 ```
-* в `meta.txt` прописываем: Это уже сделано
+* :в `meta.txt` прописываем: Это уже сделано
 ```
 #cloud-config
 
@@ -124,7 +124,7 @@ users:
     ssh-authorized-keys:
       - ssh-rsa `s`ff`e`hff`c`hf`k`gh`r`hhfg`e`hghg`t` kamaev@bastion
 ```
-* для создания `bastion`: Это уже сделано
+* :для создания `bastion`: Это уже сделано
 ```
 resource "yandex_compute_instance" "bastion" {
   name        = "vm-bastion"
@@ -158,7 +158,7 @@ resource "yandex_compute_instance" "bastion" {
   }
 }
 ```
-* для создания 2-х одинаковых ВМ в разных зонах использую стек LEMP (уже есть nginx и mySQL). Это уже сделано
+* :для создания 2-х одинаковых ВМ в разных зонах использую стек LEMP (уже есть nginx и mySQL): Это уже сделано
 
 <details>
    
