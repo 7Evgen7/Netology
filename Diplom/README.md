@@ -85,6 +85,6 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 <details>
    
-![Screnshot](https://github.com/7Evgen7/Netology/blob/main/JPG/11_02_SYSDB/11_2_3.jpg)
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/ter_ans_version.jpg)
    
 </details>
