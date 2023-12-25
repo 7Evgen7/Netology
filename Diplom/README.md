@@ -291,13 +291,25 @@ resource "yandex_compute_instance" "zabbix" {
   }
 
 ```
-* готовимся к запуску Terraform
+* готовимся к запуску Terraform, `terraform init`, а также `validate`
 
 <details>
    
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/terraform_init.jpg)
 
+</details>
+
+* `terraform plan`
+
+<details>
+
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/terraform_plan.jpg)
+
+</details>
+
+* `terraform apply`
+
+<details>
 
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/terraform_apply_.jpg)
    
