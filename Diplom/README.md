@@ -447,23 +447,6 @@ resource "yandex_compute_instance" "zabbix" {
 
 ```
 
-* в данный момент у нас следующее дерево файлов:
-```
-kamaev@ubuntu-diplom:~/project$ tree
-.
-└── terraform
-    ├── bastion.tf
-    ├── elastic-kibana.tf
-    ├── hosts.tf
-    ├── meta.txt
-    ├── network.tf
-    ├── outputs.tf
-    ├── provider.tf
-    ├── snapshots.tf
-    ├── target-group.tf
-    ├── web.tf
-    └── zabbix.tf
-```
 * прописываем создание `snapshot`:
 
 ```
@@ -486,6 +469,23 @@ resource "yandex_compute_snapshot_schedule" "snapshot" {
 
 ```
 
+* в данный момент у нас следующее дерево файлов:
+```
+kamaev@ubuntu-diplom:~/project$ tree
+.
+└── terraform
+    ├── bastion.tf
+    ├── elastic-kibana.tf
+    ├── hosts.tf
+    ├── meta.txt
+    ├── network.tf
+    ├── outputs.tf
+    ├── provider.tf
+    ├── snapshots.tf
+    ├── target-group.tf
+    ├── web.tf
+    └── zabbix.tf
+```
 
 * готовимся к запуску Terraform, `terraform init`, а также `validate`
 
