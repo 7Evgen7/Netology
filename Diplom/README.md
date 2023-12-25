@@ -291,6 +291,26 @@ resource "yandex_compute_instance" "zabbix" {
   }
 
 ```
+
+* в данный момент у нас следующее дерево файлов:
+```
+kamaev@ubuntu-diplom:~/project$ tree
+.
+└── terraform
+    ├── ansible.cfg
+    ├── bastion.tf
+    ├── elastic-kibana.tf
+    ├── hosts.tf
+    ├── meta.txt
+    ├── network.tf
+    ├── outputs.tf
+    ├── provider.tf
+    ├── snapshots.tf
+    ├── target-group.tf
+    ├── web.tf
+    └── zabbix.tf
+```
+
 * готовимся к запуску Terraform, `terraform init`, а также `validate`
 
 <details>
@@ -330,49 +350,18 @@ resource "yandex_compute_instance" "zabbix" {
    
 </details>
 
-```
-kamaev@ubuntu-diplom:~/project$ tree
-.
-└── terraform
-    ├── ansible.cfg
-    ├── bastion.tf
-    ├── elastic-kibana.tf
-    ├── hosts.tf
-    ├── meta.txt
-    ├── network.tf
-    ├── outputs.tf
-    ├── provider.tf
-    ├── snapshots.tf
-    ├── target-group.tf
-    ├── web.tf
-    └── zabbix.tf
-```
+* делаем тест работоспособности сайта, отключаем обе ВМ с nginx:
 
-```
-kamaev@ubuntu-diplom:~/project$ tree
-.
-└── terraform
-    ├── ansible
-    │   ├── ansible.log
-    │   └── hosts
-    ├── ansible.cfg
-    ├── bastion.tf
-    ├── elastic-kibana.tf
-    ├── elasticsearch.yml
-    ├── filebeat.yml
-    ├── hosts.tf
-    ├── kibana.yml
-    ├── meta.txt
-    ├── network.tf
-    ├── outputs.tf
-    ├── playbook-elastic.yml
-    ├── playbook-filebeat.yml
-    ├── playbook-kibana.yml
-    ├── playbook-zabbix.yml
-    ├── provider.tf
-    ├── snapshots.tf
-    ├── target-group.tf
-    ├── web.tf
-    ├── zabbix_agentd.conf
-    └── zabbix.tf
-```
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_no.jpg)
+   
+</details>
+
+* затем включим одну ВМ с nginx и сайт опять поднимется:
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_no1.jpg)
+   
+</details>
