@@ -627,3 +627,151 @@ kamaev@ubuntu-diplom:~/project$ tree
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_no1.jpg)
    
 </details>
+
+* после всех действий у нас следующее дерево файлов:
+
+```
+kamaev@ubuntu-diplom:~/project$ tree
+.
+└── terraform
+    ├── ansible
+    │   ├── ansible.log
+    │   └── inventory.ini
+    ├── ansible.cfg
+    ├── bastion.tf
+    ├── elastic-kibana.tf
+    ├── elasticsearch.yml
+    ├── filebeat.yml
+    ├── hosts.tf
+    ├── kibana.yml
+    ├── meta.txt
+    ├── network.tf
+    ├── outputs.tf
+    ├── provider.tf
+    ├── snapshots.tf
+    ├── target-group.tf
+    ├── terraform.tfstate
+    ├── terraform.tfstate.backup
+    ├── web.tf
+    └── zabbix.tf
+```
+* создаем все необходимые playbook, для zabbix - zabbix-agentd.conf, также yml для elastic, kibana, filebeat:
+
+`playbook-elastic`
+
+```
+---
+- name: Install elasticsearch
+  hosts: elastic
+  become: yes
+  tasks:
+      - name: Update apt cache
+        apt:
+            update_cache: yes
+      - name: Install gnupg, apt-transport-https
+        apt:
+            name:
+                - apt-transport-https
+                - gnupg
+            state: present
+      - name: Get elasticsearch
+        get_url:
+            url: https://mirror.yandex.ru/mirrors/elastic/7/pool/main/e/elasticsearch/elasticsearch-7.4.1-amd64.deb
+            dest: /home/kamaev/
+      - name: Install elasticsearch
+        apt:
+            deb: /home/kamaev/elasticsearch-7.4.1-amd64.deb
+      - name: 'Systemctl daemon reload'
+        systemd:
+            daemon_reload: true
+            name: elasticsearch.service
+            state: started
+      - name: 'Copy config file for elasticsearch'
+        copy:
+            src: ../elasticsearch_files/elasticsearch.yml
+            dest: /etc/elasticsearch
+            mode: 432
+            owner: root
+            group: elasticsearch
+      - name: 'Systemctl enable elasticsearch'
+        systemd:
+            name: elasticsearch.service
+            state: restarted
+```
+`playbook-kibana`
+
+```
+---
+- name: Install Kibana
+  hosts: kibana
+  become: yes
+  tasks:
+      - name: Get Kibana
+        get_url:
+            url: https://mirror.yandex.ru/mirrors/elastic/7/pool/main/k/kibana/kibana-7.17.9-amd64.deb
+            dest: /home/kamaev/
+      - name: Install Kibana
+        apt:
+            deb: /home/kamaev/kibana-7.17.9-amd64.deb
+      - name: Systemctl daemon reload
+        systemd:
+            daemon_reload: true
+            name: kibana.service
+            state: started
+      - name: Copy conf-file
+        copy:
+            src: /home/kamaev/project/terraform/kibana.yml
+            dest: /etc/kibana/kibana.yml
+            mode: 0644
+            owner: root
+            group: kibana
+      - name: Restart Kibana
+        systemd:
+            name: kibana.service
+            state: restarted
+```
+`playbook-zabbix`
+
+```
+---
+- name: Install Zabbix-agent
+  hosts: webserver
+  become: yes
+  tasks:
+      - name: Get zabbix-agent
+        get_url:
+            url: https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-3+ubuntu18.04_all.deb
+            dest: /home/kamaev/
+      - name: Install repo zabbix-agent
+        apt:
+            deb: /home/kamaev/zabbix-release_6.0-3+ubuntu18.04_all.deb
+      - name: Update cash
+        apt:
+            update_cache: yes
+      - name: install zabbix-agent
+        apt:
+            name: zabbix-agent
+            state: latest
+      - name: stop zabbix-agent
+        service:
+            name: zabbix-agent.service
+            state: stopped
+      - name: Copy conf-file
+        copy:
+            src: /home/kamaev/project/terraform/zabbix_agentd.conf
+            dest: /etc/zabbix/zabbix_agentd.conf
+            mode: 0644
+            owner: root
+            group: root
+      - name: Start zabbix-agent
+        service:
+            name: zabbix-agent.service
+            state: started
+```
+
+p.s. пока форматировал yml сошло сто потов :) Интернет ресурсы по форматированию не помогли.
+
+Дальше приношу извинения, сделать пока не смог, понимание как делать есть, но нет доступа с bastion до машин.
+То больничный, то работа до поздна.
+ansible_ssh_common_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ProxyCommand="ssh -p 22 -W %h:%p -q 
+kamaev@bastion использовал - не помогло. Обещаю доработать.
