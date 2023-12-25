@@ -329,3 +329,50 @@ resource "yandex_compute_instance" "zabbix" {
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_.jpg)
    
 </details>
+
+```
+kamaev@ubuntu-diplom:~/project$ tree
+.
+└── terraform
+    ├── ansible.cfg
+    ├── bastion.tf
+    ├── elastic-kibana.tf
+    ├── hosts.tf
+    ├── meta.txt
+    ├── network.tf
+    ├── outputs.tf
+    ├── provider.tf
+    ├── snapshots.tf
+    ├── target-group.tf
+    ├── web.tf
+    └── zabbix.tf
+```
+
+```
+kamaev@ubuntu-diplom:~/project$ tree
+.
+└── terraform
+    ├── ansible
+    │   ├── ansible.log
+    │   └── hosts
+    ├── ansible.cfg
+    ├── bastion.tf
+    ├── elastic-kibana.tf
+    ├── elasticsearch.yml
+    ├── filebeat.yml
+    ├── hosts.tf
+    ├── kibana.yml
+    ├── meta.txt
+    ├── network.tf
+    ├── outputs.tf
+    ├── playbook-elastic.yml
+    ├── playbook-filebeat.yml
+    ├── playbook-kibana.yml
+    ├── playbook-zabbix.yml
+    ├── provider.tf
+    ├── snapshots.tf
+    ├── target-group.tf
+    ├── web.tf
+    ├── zabbix_agentd.conf
+    └── zabbix.tf
+```
