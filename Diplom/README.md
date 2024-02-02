@@ -188,7 +188,7 @@ resource "yandex_compute_instance" "nginx1" {
   }
   network_interface {
     subnet_id = yandex_vpc_subnet.subnet-nginx1.id
-    security_group_ids = [yandex_vpc_security_group.in-sg.id, yandex_vpc_securi$
+    security_group_ids = [yandex_vpc_security_group.in-sg.id, yandex_vpc_security_group.sg-zabbix.id]
         ip_address = "10.1.11.10"
   }
   metadata = {
