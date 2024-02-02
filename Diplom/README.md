@@ -655,6 +655,19 @@ kamaev@ubuntu-diplom:~/project$ tree
     ├── web.tf
     └── zabbix.tf
 ```
+* Для машин, у которых нет публичных адресов скачиваем deb-пакеты (elastic, filebeat и zabbix-agent):
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/copy_elastic.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/copy_filebeat.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/copy_za.jpg)
+
+</details>
+  
+
 * создаем все необходимые playbook, для zabbix - zabbix-agentd.conf, также yml для elastic, kibana, filebeat и zabbix-server:
 
 `playbook-elastic`
