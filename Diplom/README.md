@@ -876,3 +876,25 @@ kamaev@ubuntu-diplom:~/project$ tree
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/zag_status.jpg)
 
 </details>
+
+* Для настройки `zabbix-server` заходим на внешний адрес поднятой машины zabbix-server и делаем необходимые настройки, в результате получаем:
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/zabbix_setup.jpg)
+
+</details>
+
+* Далее заходим на web интерфейс zabbix, для настройки подключений к нашем двум машинам с zabbix-agent. После настройки:
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/zabbix_web.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/web1.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/web2.jpg)
+
+</details>
+
+
