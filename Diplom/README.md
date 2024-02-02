@@ -845,9 +845,18 @@ kamaev@ubuntu-diplom:~/project$ tree
              systemctl enable zabbix-agent
 ```
 
-p.s. пока форматировал yml сошло сто потов :) Интернет ресурсы по форматированию не помогли.
+* Запускаем каждый playbook
 
-Дальше приношу извинения, сделать пока не смог, понимание как делать есть, но нет доступа с bastion до машин.
-То больничный, то работа до поздна.
-ansible_ssh_common_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ProxyCommand="ssh -p 22 -W %h:%p -q 
-kamaev@bastion использовал - не помогло. Обещаю доработать.
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/playbook_elastic.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/playbook_kibana.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/playbook_filebeat.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/playbook_zabbix_server.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/playbook_zabbix_agent.jpg)
+
+</details>
