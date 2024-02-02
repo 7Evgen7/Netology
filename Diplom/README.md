@@ -744,7 +744,6 @@ kamaev@ubuntu-diplom:~/project$ tree
     apt:
         update_cache: yes
 
-
   - name: Download zabbix
     get_url:
         url: https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb
