@@ -655,7 +655,7 @@ kamaev@ubuntu-diplom:~/project$ tree
     ├── web.tf
     └── zabbix.tf
 ```
-* создаем все необходимые playbook, для zabbix - zabbix-agentd.conf, также yml для elastic, kibana, filebeat:
+* создаем все необходимые playbook, для zabbix - zabbix-agentd.conf, также yml для elastic, kibana, filebeat и zabbix-server:
 
 `playbook-elastic`
 
@@ -665,38 +665,34 @@ kamaev@ubuntu-diplom:~/project$ tree
   hosts: elastic
   become: yes
   tasks:
-      - name: Update apt cache
-        apt:
-            update_cache: yes
-      - name: Install gnupg, apt-transport-https
-        apt:
-            name:
-                - apt-transport-https
-                - gnupg
-            state: present
-      - name: Get elasticsearch
-        get_url:
-            url: https://mirror.yandex.ru/mirrors/elastic/7/pool/main/e/elasticsearch/elasticsearch-7.4.1-amd64.deb
-            dest: /home/kamaev/
-      - name: Install elasticsearch
-        apt:
-            deb: /home/kamaev/elasticsearch-7.4.1-amd64.deb
-      - name: 'Systemctl daemon reload'
-        systemd:
-            daemon_reload: true
-            name: elasticsearch.service
-            state: started
-      - name: 'Copy config file for elasticsearch'
-        copy:
-            src: ../elasticsearch_files/elasticsearch.yml
-            dest: /etc/elasticsearch
-            mode: 432
-            owner: root
-            group: elasticsearch
-      - name: 'Systemctl enable elasticsearch'
-        systemd:
-            name: elasticsearch.service
-            state: restarted
+
+  - name: Copy elasticsearch
+    copy:
+      src: /home/kamaev/project/terraform/elasticsearch-7.17.9-amd64.deb
+      dest: /home/kamaev
+
+  - name: Install elasticsearch
+    apt:
+      deb: /home/kamaev/elasticsearch-7.17.9-amd64.deb
+
+  - name: Systemctl daemon reload
+    systemd:
+      daemon_reload: true
+      name: elasticsearch.service
+      state: started
+
+  - name: Copy conf-file
+    copy:
+      src: /home/kamaev/project/terraform/elasticsearch.yml
+      dest: /etc/elasticsearch/elasticsearch.yml
+      mode: 0644
+      owner: root
+      group: elasticsearch
+
+  - name: Restart elasticsearch
+    systemd:
+      name: elasticsearch.service
+      state: restarted
 ```
 `playbook-kibana`
 
@@ -710,14 +706,17 @@ kamaev@ubuntu-diplom:~/project$ tree
         get_url:
             url: https://mirror.yandex.ru/mirrors/elastic/7/pool/main/k/kibana/kibana-7.17.9-amd64.deb
             dest: /home/kamaev/
+
       - name: Install Kibana
         apt:
             deb: /home/kamaev/kibana-7.17.9-amd64.deb
+
       - name: Systemctl daemon reload
         systemd:
             daemon_reload: true
             name: kibana.service
             state: started
+
       - name: Copy conf-file
         copy:
             src: /home/kamaev/project/terraform/kibana.yml
@@ -725,11 +724,69 @@ kamaev@ubuntu-diplom:~/project$ tree
             mode: 0644
             owner: root
             group: kibana
+
       - name: Restart Kibana
         systemd:
             name: kibana.service
             state: restarted
+
 ```
+`playbook-zs`
+
+```
+---
+- name: Install zabbix
+  hosts: zabbix-server
+  become: yes
+  tasks:
+
+  - name: apt update
+    apt:
+        update_cache: yes
+
+
+  - name: Download zabbix
+    get_url:
+        url: https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb
+        dest: /home/kamaev
+
+  - name: Install postgresql
+    apt:
+       name: postgresql
+
+  - name: Install zabbix
+    apt:
+       deb: /home/kamaev/zabbix-release_6.0-4+debian11_all.deb
+
+  - name: apt update
+    apt:
+       update_cache: yes
+
+  - name: install zabbix
+    apt:
+       name:
+          - zabbix-server-pgsql
+          - zabbix-frontend-php
+          - php7.4-pgsql
+          - zabbix-apache-conf
+          - zabbix-sql-scripts
+
+  - name: create user db
+    shell: |
+        su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'kamaev123\'';"'
+        su - postgres -c 'psql --command "CREATE DATABASE zabbix OWNER zabbix;"'
+        zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+
+  - name: Edit zabbix
+    shell: |
+        sed -i 's/# DBPassword=/DBPassword=kamaev123/g' /etc/zabbix/zabbix_server.conf
+
+  - name: Restart all sevices
+    shell: |
+        systemctl restart zabbix-server apache2
+        systemctl enable zabbix-server apache2
+```
+
 `playbook-zabbix`
 
 ```
@@ -738,35 +795,42 @@ kamaev@ubuntu-diplom:~/project$ tree
   hosts: webserver
   become: yes
   tasks:
-      - name: Get zabbix-agent
-        get_url:
-            url: https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-3+ubuntu18.04_all.deb
+      - name: Copy zabbix-agent
+        copy:
+            src: "/home/kamaev/project/terraform/zabbix-release_6.0-4+debian11_all.deb"
             dest: /home/kamaev/
-      - name: Install repo zabbix-agent
+
+      - name: Install repositories zabbix-agent
         apt:
-            deb: /home/kamaev/zabbix-release_6.0-3+ubuntu18.04_all.deb
-      - name: Update cash
+           deb: /home/kamaev/zabbix-release_6.0-4+debian11_all.deb
+
+      - name: apt update
         apt:
-            update_cache: yes
+           update_cache: yes
+
       - name: install zabbix-agent
         apt:
-            name: zabbix-agent
-            state: latest
-      - name: stop zabbix-agent
+           name:
+              - zabbix-agent
+
+      - name: zabbix-agent stop
         service:
-            name: zabbix-agent.service
-            state: stopped
+          name: zabbix-agent.service
+          state: stopped
+
       - name: Copy conf-file
         copy:
             src: /home/kamaev/project/terraform/zabbix_agentd.conf
             dest: /etc/zabbix/zabbix_agentd.conf
             mode: 0644
             owner: root
-            group: root
-      - name: Start zabbix-agent
-        service:
-            name: zabbix-agent.service
-            state: started
+            group: zabbix
+
+
+      - name: Restart all sevices
+        shell: |
+             systemctl restart zabbix-agent
+             systemctl enable zabbix-agent
 ```
 
 p.s. пока форматировал yml сошло сто потов :) Интернет ресурсы по форматированию не помогли.
