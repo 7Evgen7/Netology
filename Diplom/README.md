@@ -860,3 +860,19 @@ kamaev@ubuntu-diplom:~/project$ tree
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/playbook_zabbix_agent.jpg)
 
 </details>
+
+* На машинах проверяем статусы, установленных сервисов
+
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/elastic_status.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/kibana_status.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/filebeat_status.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/playbook_zs_status.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/playbook_zag_status.jpg)
+
+</details>
