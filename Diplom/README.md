@@ -897,4 +897,18 @@ kamaev@ubuntu-diplom:~/project$ tree
 
 </details>
 
+* Проверяем подключение к `elasticsearch` со всех машин:
 
+<details>
+   
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_elastic.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_el1.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_el2.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_el3.jpg)
+
+![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_el4.jpg)
+
+</details>
