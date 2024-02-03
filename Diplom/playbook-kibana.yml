@@ -1,0 +1,32 @@
+---
+- name: Install Kibana
+  hosts: kibana
+  become: yes
+  tasks:
+      - name: Get Kibana
+        get_url:
+            url: https://mirror.yandex.ru/mirrors/elastic/7/pool/main/k/kibana/kibana-7.17.9-amd64.deb
+            dest: /home/kamaev/
+
+      - name: Install Kibana
+        apt:
+            deb: /home/kamaev/kibana-7.17.9-amd64.deb
+
+      - name: Systemctl daemon reload
+        systemd:
+            daemon_reload: true
+            name: kibana.service
+            state: started
+
+      - name: Copy conf-file
+        copy:
+            src: /home/kamaev/project/terraform/kibana.yml
+            dest: /etc/kibana/kibana.yml
+            mode: 0644
+            owner: root
+            group: kibana
+
+      - name: Restart Kibana
+        systemd:
+            name: kibana.service
+            state: restarted

@@ -1,0 +1,33 @@
+---
+- name: Install elasticsearch
+  hosts: elastic
+  become: yes
+  tasks:
+
+  - name: Copy elasticsearch
+    copy:
+      src: /home/kamaev/project/terraform/elasticsearch-7.17.9-amd64.deb
+      dest: /home/kamaev
+
+  - name: Install elasticsearch
+    apt:
+      deb: /home/kamaev/elasticsearch-7.17.9-amd64.deb
+
+  - name: Systemctl daemon reload
+    systemd:
+      daemon_reload: true
+      name: elasticsearch.service
+      state: started
+
+  - name: Copy conf-file
+    copy:
+      src: /home/kamaev/project/terraform/elasticsearch.yml
+      dest: /etc/elasticsearch/elasticsearch.yml
+      mode: 0644
+      owner: root
+      group: elasticsearch
+ 
+  - name: Restart elasticsearch
+    systemd:
+      name: elasticsearch.service
+      state: restarted

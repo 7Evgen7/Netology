@@ -1,0 +1,41 @@
+---
+- name: Install Zabbix-agent
+  hosts: webserver
+  become: yes
+  tasks:
+      - name: Copy zabbix-agent
+        copy:
+            src: "/home/kamaev/project/terraform/zabbix-release_6.0-4+debian11_all.deb"
+            dest: /home/kamaev/
+
+      - name: Install repositories zabbix-agent
+        apt:
+           deb: /home/kamaev/zabbix-release_6.0-4+debian11_all.deb
+
+      - name: apt update
+        apt:
+           update_cache: yes
+
+      - name: install zabbix-agent
+        apt:
+           name:
+              - zabbix-agent
+
+      - name: zabbix-agent stop
+        service:
+          name: zabbix-agent.service
+          state: stopped
+
+      - name: Copy conf-file
+        copy:
+            src: /home/kamaev/project/terraform/zabbix_agentd.conf
+            dest: /etc/zabbix/zabbix_agentd.conf
+            mode: 0644
+            owner: root
+            group: zabbix
+
+
+      - name: Restart all sevices
+        shell: |
+             systemctl restart zabbix-agent
+             systemctl enable zabbix-agent

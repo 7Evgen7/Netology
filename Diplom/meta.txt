@@ -1,0 +1,9 @@
+#cloud-config
+
+users:
+  - name: kamaev
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB311111111 kamaev@ubuntu-diplom

@@ -1,0 +1,31 @@
+---
+
+- name: Install Filebeat
+  hosts: webserver
+  become: yes
+  
+  tasks:
+  - name: Copy Filebeat
+    copy:
+      src: "/home/kamaev/project/terraform/filebeat-7.17.9-amd64.deb"
+      dest: /home/kamaev/
+
+  - name: Install Filebeat
+    apt:
+      deb: /home/kamaev/filebeat-7.17.9-amd64.deb
+
+  - name: Systemctl daemon reload
+    systemd:
+      daemon_reload: true
+      name: filebeat.service
+      state: started
+
+  - name: Copy conf-file
+    copy:
+      src: /home/kamaev/project/terraform/filebeat.yml
+      dest: /etc/filebeat/filebeat.yml
+
+  - name: Restart Filebeat
+    systemd:
+      name: filebeat.service
+      state: restarted
