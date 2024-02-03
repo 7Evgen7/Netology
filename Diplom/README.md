@@ -897,7 +897,7 @@ kamaev@ubuntu-diplom:~/project$ tree
 
 </details>
 
-* Проверяем подключение к `elasticsearch` со всех машин:
+* Проверяем ответ от `elasticsearch` со всех машин:
 
 <details>
    
