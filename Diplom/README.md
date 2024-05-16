@@ -142,6 +142,38 @@ resource "yandex_compute_instance" "bastion" {
   }
 }
 ```
+
+Надо определиться с доступом с `bastion` до всех наших ВМ и где будет запускаться `ansible`. Я буду запускать ансибл у себя, поэтому чтобы пройти бастион и оказаться на всех ВМ, в вашем `~/.ssh/config` нужно указать proxy jump.
+
+```
+### The Bastion Host
+Host bastion
+  User kamaev
+  HostName 158.160.49.66
+
+### The Remote Host
+Host elastic1
+  HostName 10.1.11.11
+  ProxyJump bastion
+
+Host kibana1
+  Hostname 10.1.11.22
+  ProxyJump bastion
+
+Host zabbix-server
+  Hostname 10.1.11.254
+  ProxyJump bastion
+
+Host webserver1
+  Hostname 10.1.11.10
+  ProxyJump bastion
+
+Host webserver2
+  Hostname 10.1.12.10
+  ProxyJump bastion
+```
+
+
 * для создания 2-х одинаковых ВМ в разных зонах использую стек LEMP (уже есть nginx и mySQL)
 
 <details>
@@ -896,3 +928,9 @@ kamaev@ubuntu-diplom:~/project$ tree
 ![Screnshot](https://github.com/7Evgen7/Netology/blob/main/Diplom/JPG/curl_el4.jpg)
 
 </details>
+
+p.s. После анализа дипломной работы, появились решения, которые могли сделать работу более универсальной.
+Однотипные ресурсы можно представить одним ресурсом через for_each, передавая индивидуальные параметры через объект типа map. 
+Такой объект удобно размещать в переменных. Также, в переменные можно убрать некоторые числовые данные - порты, сети.
+В ансибл можно было использовать роли. Для склейки запуска тераформа и ансибла можно использовать local-exec в тераформе.
+По мониторингу - следующий шаг в улучшении сервиса может быть как реализация пороговых значений (thresholds) и оповещения (alerts) на них.
